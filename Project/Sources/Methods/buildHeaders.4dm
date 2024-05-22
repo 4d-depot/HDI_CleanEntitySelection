@@ -10,8 +10,10 @@ End if
 
 $result:=New object:C1471()
 
-If (Form:C1466.sessionCookie#Null:C1517)
-	$result["Cookie"]:=Form:C1466.sessionCookie
+
+
+If (Storage:C1525.session.cookie#Null:C1517)
+	$result["Cookie"]:=Storage:C1525.session.cookie
 Else 
 	$result["Cookie"]:=""
 End if 

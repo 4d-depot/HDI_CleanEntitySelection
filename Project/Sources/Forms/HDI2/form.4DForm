@@ -4,8 +4,8 @@
 	"windowMaxWidth": 32000,
 	"windowMinHeight": 540,
 	"windowMaxHeight": 32000,
-	"width": 960,
-	"height": 640,
+	"width": 1100,
+	"height": 800,
 	"menuBar": "Menu Bar #1",
 	"markerHeader": 15,
 	"markerBody": 200,
@@ -29,8 +29,8 @@
 					"type": "tab",
 					"top": 20,
 					"left": 20,
-					"width": 920,
-					"height": 560,
+					"width": 1060,
+					"height": 760,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "objTabs",
@@ -39,26 +39,6 @@
 					"events": [
 						"onClick"
 					]
-				},
-				"BtnOK": {
-					"type": "button",
-					"top": 600,
-					"left": 838,
-					"width": 102,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/OK"
-					},
-					"shortcutKey": "[Enter]",
-					"text": "OK",
-					"class": "Buttons_13",
-					"defaultButton": true,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/BtnOK.4dm"
 				}
 			}
 		},
@@ -68,7 +48,7 @@
 					"type": "input",
 					"top": 80,
 					"left": 80,
-					"width": 800,
+					"width": 970,
 					"height": 480,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -93,8 +73,8 @@
 				"information2": {
 					"type": "input",
 					"top": 80,
-					"left": 40,
-					"width": 420,
+					"left": 80,
+					"width": 970,
 					"height": 200,
 					"sizingY": "grow",
 					"dataSource": "Infos[1].Description",
@@ -113,8 +93,8 @@
 				},
 				"List Box": {
 					"type": "listbox",
-					"left": 97,
-					"top": 321,
+					"left": 80,
+					"top": 320,
 					"width": 395,
 					"height": 221,
 					"events": [
@@ -172,8 +152,8 @@
 				"DropButton": {
 					"type": "button",
 					"text": "Drop",
-					"top": 321,
-					"left": 655,
+					"top": 320,
+					"left": 500,
 					"width": 100,
 					"height": 20,
 					"events": [
@@ -185,8 +165,8 @@
 				"CleanButton": {
 					"type": "button",
 					"text": "Clean",
-					"top": 321,
-					"left": 765,
+					"top": 440,
+					"left": 500,
 					"width": 100,
 					"height": 20,
 					"events": [
@@ -198,8 +178,8 @@
 				"Button2": {
 					"type": "button",
 					"text": "Restore data",
-					"top": 371,
-					"left": 655,
+					"top": 550,
+					"left": 500,
 					"width": 140,
 					"height": 20,
 					"events": [
@@ -207,6 +187,42 @@
 					],
 					"method": "ObjectMethods/Button2.4dm",
 					"focusable": false
+				},
+				"Input13": {
+					"type": "input",
+					"left": 500,
+					"top": 360,
+					"width": 550,
+					"height": 50,
+					"dataSource": "LinesCode{1}",
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"styledText": true
+				},
+				"Input2": {
+					"type": "input",
+					"left": 500,
+					"top": 480,
+					"width": 550,
+					"height": 50,
+					"dataSource": "LinesCode{2}",
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"styledText": true
+				},
+				"Input3": {
+					"type": "input",
+					"left": 80,
+					"top": 550,
+					"width": 300,
+					"height": 30,
+					"dataSource": "LinesCode{3}",
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"styledText": true
 				}
 			}
 		},
@@ -214,10 +230,10 @@
 			"objects": {
 				"information1": {
 					"type": "input",
-					"top": 48,
-					"left": 57,
-					"width": 850,
-					"height": 100,
+					"top": 80,
+					"left": 80,
+					"width": 970,
+					"height": 170,
 					"sizingX": "move",
 					"sizingY": "grow",
 					"dataSource": "Infos[2].Description",
@@ -236,20 +252,20 @@
 				},
 				"RunRESTRequest": {
 					"type": "input",
-					"left": 48,
-					"top": 150,
-					"width": 458,
-					"height": 33,
+					"left": 40,
+					"top": 300,
+					"width": 460,
+					"height": 30,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.getEntitySet"
 				},
 				"RunRESTRequestButton": {
 					"type": "button",
-					"text": "Run",
-					"top": 158,
-					"left": 521,
-					"width": 100,
+					"text": "Build entity set",
+					"top": 340,
+					"left": 40,
+					"width": 140,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -259,20 +275,21 @@
 				},
 				"Input1": {
 					"type": "input",
-					"left": 42,
-					"top": 302,
-					"width": 250,
-					"height": 273,
+					"left": 680,
+					"top": 260,
+					"width": 380,
+					"height": 500,
 					"enterable": false,
 					"focusable": false,
-					"dataSource": "Form:C1466.response"
+					"dataSource": "Form:C1466.response",
+					"scrollbarVertical": "visible"
 				},
-				"List Box1": {
+				"PersonsList": {
 					"type": "listbox",
-					"left": 332,
-					"top": 359,
+					"left": 40,
+					"top": 420,
 					"width": 395,
-					"height": 221,
+					"height": 81,
 					"events": [
 						"onSelectionChange"
 					],
@@ -284,7 +301,8 @@
 					"selectedItemsSource": "Form:C1466.selected",
 					"rowHeight": "20px",
 					"scrollbarHorizontal": "hidden",
-					"method": "ObjectMethods/List Box1.4dm",
+					"method": "ObjectMethods/PersonsList.4dm",
+					"visibility": "hidden",
 					"columns": [
 						{
 							"header": {
@@ -325,61 +343,62 @@
 						}
 					]
 				},
-				"DropButton2": {
+				"PersonsListdropButton": {
 					"type": "button",
 					"text": "Drop",
-					"top": 359,
-					"left": 736,
+					"top": 420,
+					"left": 450,
 					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/DropButton2.4dm",
-					"focusable": false
+					"method": "ObjectMethods/PersonsListdropButton.4dm",
+					"focusable": false,
+					"visibility": "hidden"
 				},
 				"EntitySet": {
 					"type": "input",
-					"left": 48,
-					"top": 203,
-					"width": 250,
-					"height": 33,
+					"left": 150,
+					"top": 380,
+					"width": 300,
+					"height": 20,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.entitySet",
 					"visibility": "hidden"
 				},
-				"EntitySetURL": {
+				"GetEntitySetURL": {
 					"type": "input",
-					"left": 332,
-					"top": 203,
-					"width": 458,
-					"height": 33,
+					"left": 40,
+					"top": 540,
+					"width": 460,
+					"height": 30,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.entitySetURL",
 					"visibility": "hidden"
 				},
-				"EntitySetURLButton": {
+				"GetEntitySetButton": {
 					"type": "button",
-					"text": "Run",
-					"top": 216,
-					"left": 789,
-					"width": 100,
+					"text": "Get the entity set",
+					"top": 580,
+					"left": 40,
+					"width": 140,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"focusable": false,
-					"method": "ObjectMethods/EntitySetURLButton.4dm",
+					"method": "ObjectMethods/GetEntitySetButton.4dm",
 					"visibility": "hidden"
 				},
 				"CleanEntitySetURL": {
 					"type": "input",
-					"left": 48,
-					"top": 249,
-					"width": 600,
-					"height": 33,
+					"left": 40,
+					"top": 640,
+					"width": 630,
+					"height": 30,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.cleanEntitySetURL",
@@ -387,10 +406,10 @@
 				},
 				"CleanEntitySetButton": {
 					"type": "button",
-					"text": "Run",
-					"top": 255,
-					"left": 823,
-					"width": 100,
+					"text": "Get a clean entity set",
+					"top": 680,
+					"left": 40,
+					"width": 180,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -398,6 +417,15 @@
 					"focusable": false,
 					"method": "ObjectMethods/CleanEntitySetButton.4dm",
 					"visibility": "hidden"
+				},
+				"EntitySetLabel": {
+					"type": "text",
+					"text": "Entity set",
+					"top": 380,
+					"left": 40,
+					"width": 70,
+					"height": 20,
+					"fontWeight": "bold"
 				}
 			}
 		}
@@ -413,5 +441,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 206
+	"geometryStamp": 609
 }

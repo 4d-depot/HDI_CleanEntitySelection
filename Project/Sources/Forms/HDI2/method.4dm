@@ -10,11 +10,10 @@ Case of
 		
 		Form:C1466.dropDone:=False:C215
 		
-		OBJECT SET ENABLED:C1123(*; "DropButton"; Form:C1466.selected.length>=1)
+		OBJECT SET ENABLED:C1123(*; "DropButton"; False:C215)
 		OBJECT SET ENABLED:C1123(*; "CleanButton"; Form:C1466.dropDone=True:C214)
 		
 		
-		Form:C1466.getEntitySet:="http://127.0.0.1:8044/rest/Persons?$filter=\"ID<=4\"&$method=entityset"
 		
 		
 	: (Form event code:C388=On Close Box:K2:21)
@@ -27,10 +26,17 @@ Case of
 	: (Form event code:C388=On Page Change:K2:54)
 		importData
 		
-		Form:C1466.persons2:=ds:C1482.Persons.query("ID <= :1"; 4)
+		Form:C1466.persons2:=ds:C1482.Persons.query("ID <= :1"; 3)
 		
-		OBJECT SET ENABLED:C1123(*; "DropButton2"; Form:C1466.selected.length>=1)
+		Form:C1466.getEntitySet:="/rest/Persons?$filter=\"ID<=3\"&$method=entityset"
 		
+		OBJECT SET ENABLED:C1123(*; "PersonsListdropButton"; False:C215)
+		
+		
+		OBJECT SET VISIBLE:C603(*; "EntitySet@"; False:C215)
+		OBJECT SET VISIBLE:C603(*; "GetEntitySet@"; False:C215)
+		OBJECT SET VISIBLE:C603(*; "CleanEntitySet@"; False:C215)
+		OBJECT SET VISIBLE:C603(*; "PersonsList@"; False:C215)
 		
 End case 
 
