@@ -13,7 +13,7 @@ Case of
 		OBJECT SET ENABLED:C1123(*; "DropButton"; False:C215)
 		OBJECT SET ENABLED:C1123(*; "CleanButton"; Form:C1466.dropDone=True:C214)
 		
-		
+		manageTexts
 		
 		
 	: (Form event code:C388=On Close Box:K2:21)
@@ -37,6 +37,8 @@ Case of
 		OBJECT SET VISIBLE:C603(*; "GetEntitySet@"; False:C215)
 		OBJECT SET VISIBLE:C603(*; "CleanEntitySet@"; False:C215)
 		OBJECT SET VISIBLE:C603(*; "PersonsList@"; False:C215)
+		
+		manageTexts
 		
 End case 
 
