@@ -223,6 +223,17 @@
 					"focusable": false,
 					"fill": "transparent",
 					"styledText": true
+				},
+				"Text": {
+					"type": "text",
+					"text": "Persons",
+					"top": 290,
+					"left": 80,
+					"width": 100,
+					"height": 20,
+					"fontWeight": "bold",
+					"stroke": "#6495ed",
+					"fontSize": 14
 				}
 			}
 		},
@@ -441,5 +452,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 609
+	"geometryStamp": 655
 }
