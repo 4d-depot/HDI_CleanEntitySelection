@@ -12,7 +12,7 @@ $result:=New object:C1471()
 
 
 
-If (Storage:C1525.session.cookie#Null:C1517)
+If (Storage:C1525.session.cookie#"")
 	$result["Cookie"]:=Storage:C1525.session.cookie
 Else 
 	$result["Cookie"]:=""
