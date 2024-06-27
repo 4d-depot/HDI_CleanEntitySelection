@@ -1,6 +1,6 @@
-# HDI_Template_20
+# HDI_CleanEntitySelection
 
-Description (4D 20 Rx)
+Clean deleted entities in entity selection (4D 20 R6)
 
 Find more information on the [blog post](https://blog.4d.com/).
 
