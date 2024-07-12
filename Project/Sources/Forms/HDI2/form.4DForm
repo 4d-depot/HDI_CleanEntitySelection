@@ -39,6 +39,18 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 750,
+					"left": 20,
+					"width": 110,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace"
 				}
 			}
 		},
@@ -50,8 +62,8 @@
 					"left": 80,
 					"width": 970,
 					"height": 480,
-					"sizingX": "grow",
-					"sizingY": "grow",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"dataSource": "Infos[0].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -76,7 +88,7 @@
 					"left": 80,
 					"width": 970,
 					"height": 200,
-					"sizingY": "grow",
+					"sizingY": "fixed",
 					"dataSource": "Infos[1].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -109,6 +121,7 @@
 					"rowHeight": "20px",
 					"scrollbarHorizontal": "hidden",
 					"method": "ObjectMethods/List Box.4dm",
+					"sizingY": "move",
 					"columns": [
 						{
 							"header": {
@@ -160,7 +173,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/DropButton.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "move"
 				},
 				"CleanButton": {
 					"type": "button",
@@ -173,7 +187,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/CleanButton.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "move"
 				},
 				"Button2": {
 					"type": "button",
@@ -186,7 +201,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button2.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "move"
 				},
 				"Input13": {
 					"type": "input",
@@ -198,7 +214,8 @@
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
-					"styledText": true
+					"styledText": true,
+					"sizingY": "move"
 				},
 				"Input2": {
 					"type": "input",
@@ -210,7 +227,8 @@
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
-					"styledText": true
+					"styledText": true,
+					"sizingY": "move"
 				},
 				"Input3": {
 					"type": "input",
@@ -222,7 +240,8 @@
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
-					"styledText": true
+					"styledText": true,
+					"sizingY": "move"
 				},
 				"Text": {
 					"type": "text",
@@ -233,7 +252,8 @@
 					"height": 20,
 					"fontWeight": "bold",
 					"stroke": "#6495ed",
-					"fontSize": 14
+					"fontSize": 14,
+					"sizingY": "move"
 				}
 			}
 		},
@@ -245,8 +265,8 @@
 					"left": 80,
 					"width": 970,
 					"height": 170,
-					"sizingX": "move",
-					"sizingY": "grow",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"dataSource": "Infos[2].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -452,5 +472,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 655
+	"geometryStamp": 691
 }

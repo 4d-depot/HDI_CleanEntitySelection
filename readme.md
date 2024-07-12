@@ -2,7 +2,7 @@
 
 Clean deleted entities in entity selection (4D 20 R6)
 
-Find more information on the [blog post](https://blog.4d.com/).
+Find more information on the [blog post](https://blog.4d.com/orda-say-goodbye-to-empty-spaces-in-your-entity-selections).
 
 ## Installing and Using a 4D Project
 

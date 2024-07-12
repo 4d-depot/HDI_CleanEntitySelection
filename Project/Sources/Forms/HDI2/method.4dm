@@ -2,6 +2,8 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		
+		btnTrace:=False:C215
+		
 		InitInfo
 		
 		importData
@@ -24,7 +26,15 @@ Case of
 		End if 
 		
 	: (Form event code:C388=On Page Change:K2:54)
+		
 		importData
+		
+		Form:C1466.persons:=ds:C1482.Persons.all()
+		Form:C1466.dropDone:=False:C215
+		
+		OBJECT SET ENABLED:C1123(*; "DropButton"; False:C215)
+		OBJECT SET ENABLED:C1123(*; "CleanButton"; Form:C1466.dropDone=True:C214)
+		
 		
 		Form:C1466.persons2:=ds:C1482.Persons.query("ID <= :1"; 3)
 		

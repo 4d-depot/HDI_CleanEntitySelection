@@ -3,6 +3,11 @@
 var $notDropped : cs:C1710.PersonsSelection
 
 
+If (btnTrace)
+	TRACE:C157
+End if 
+
+
 $notDropped:=Form:C1466.selected.drop()
 
 Form:C1466.persons:=Form:C1466.persons

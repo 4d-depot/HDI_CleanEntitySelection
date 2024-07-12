@@ -3,7 +3,6 @@ var $headers : Object:={Cookie: ""}
 var $requestObj; $request : Object
 
 var $start; $end : Integer
-var $info : Object
 var $cookies : Collection
 var $cookie : Text
 
